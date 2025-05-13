@@ -1,5 +1,5 @@
 <template>
-  <el-dropdown @command="handleCommand" class="fu-table-more-button">
+    <el-dropdown @command="handleCommand" trigger="click" class="fu-table-more-button" popper-class="fu-table-more-popper">
     <el-button link type="primary" @click.stop>
       <el-icon v-if="type === 'icon'">
         <MoreFilled />
